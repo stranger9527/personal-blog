@@ -106,7 +106,7 @@ body {
 /*banner区域*/
 .banner {
     display: block;
-    margin: auto;
+    margin: 50px auto;
     width: 1000px;
     height: 460px;
 }
@@ -133,6 +133,11 @@ body {
     flex: 1;
 }
 
+.banner-tool li .active,
+.banner-tool li a:hover {
+    border-bottom: 2px solid #ff0000;
+}
+
 .banner-tool li a {
     display: block;
     padding: 10px 10px;
@@ -141,11 +146,30 @@ body {
     font-size: 20px;
 }
 
-.banner-tool .recent{
+.banner-tool .active{
     padding-left: 20px;
     font-size: 0;
     background: url("../images/S13.png") no-repeat center center;
 
 }
 
+/*热点赛事*/
+.event {
+    margin: 60px auto;
+    width: 1000px;
+}
 
+.hd {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.hd .more {
+    padding-right: 16px;
+    background: url("../images/more.png") no-repeat right center;
+    font-size: 14px;
+    color: #999;
+}
