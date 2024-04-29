@@ -1,0 +1,215 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+/*侧边栏*/
+aside {
+    /*position: fixed;*/
+    /*position: relative;*/
+    width: 300px;
+    /*display: block;*/
+}
+
+.aside-box {
+    border: #f3f5f7 solid 1px;
+    padding: 18px;
+    background-color: #fff;
+    position: sticky;
+    top: 110px;
+    border-radius: 2px;
+}
+
+.match {
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.match:last-child {
+
+    border-bottom: 0;
+}
+
+.match-header {
+    margin: 4px;
+}
+
+.match-title {
+    display: flex;
+    justify-content: center;
+    color: #222;
+    font-size: 16px;
+}
+
+.match-body {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.match-team, .match-center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80px;
+}
+
+.match-center {
+    flex-direction: row;
+    margin-top: 30px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    height: 40px;
+    color: #484c53;
+}
+
+.match-center div:nth-child(2) {
+    margin: 0 10px 4px;
+}
+
+
+.match-team-pic img {
+    width: 80px;
+    height: 80px;
+}
+
+.match-team-name {
+    color: #18191c;
+    font-size: 16px;
+    height: 17px;
+    line-height: 17px;
+    margin-top: 2px;
+}
+/*中央主体*/
+main {
+    margin-left: 8px;
+    z-index: 40;
+}
+
+.blog-content-box {
+    border: #f3f5f7 solid 1px;
+    width: 800px;
+    position: relative;
+    padding: 0 24px 16px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.blog-header-box {
+    padding-top: 8px;
+}
+
+.article-header {
+
+}
+
+.article-title-box {
+    margin-bottom: 10px;
+}
+
+.article-title {
+    font-size: 28px;
+    word-wrap: break-word;
+    color: #222226;
+    font-weight: 600;
+    margin: 0;
+    word-break: break-all;
+}
+
+/*h1 {*/
+/*    text-align: center;*/
+/*    font-weight: 400;*/
+/*    font-size: 30px;*/
+/*    color: #333333;*/
+/*}*/
+
+/*p {*/
+/*    text-indent: 2em;*/
+/*    font-size: 18px;*/
+/*    color: #333333;*/
+/*}*/
+
+.article-info-box {
+    margin-bottom: 10px;
+}
+
+.post-time {
+    color: #99a2aa;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.match-time {
+    color: #99a2aa;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.article-body-box {
+    padding-top: 16px;
+}
+
+.article-body {
+    font-size: 16px;
+    min-height: 70px;
+}
+
+.article-body img {
+    width: 752px;
+}
+
+.article-body p {
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 16px;
+    overflow: hidden;
+}
+
+.match-course h2 {
+    font-size: 24px;
+    word-wrap: break-word;
+    color: #222226;
+    font-weight: 600;
+    margin: 10px 0;
+    word-break: break-all;
+}
+/*.detail-pic {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.header {*/
+/*    background-color: #E3E5E7;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.header span {*/
+
+/*}*/
+
+/*.header span:hover {*/
+/*    !*background-color: #99a2aa;*!*/
+/*}*/
+
+/*.header a:hover {*/
+/*    background-color: #99a2aa;*/
+/*}*/
+
+/*.header a:before{*/
+/*    !*content: url("../resources/images/avatar.webp");*!*/
+/*}*/
+
+/*a.default-entry {*/
+/*    display: inline-block;*/
+/*    width: 50px;*/
+/*    height: 45px;*/
+/*    font-size: 20px;*/
+/*    line-height: 45px;*/
+/*    text-decoration: none;*/
+/*    color: #333;*/
+/*}*/

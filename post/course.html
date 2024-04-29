@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>赛程</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/course.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../js/ejs.min.js" type="text/javascript"></script>
+    <script src="../js/post/check.js"></script>
+</head>
+<body>
+
+<!--头部区域-->
+<div class="header">
+    <div class="wrapper">
+        <!--logo-->
+        <div class="logo">
+            <h1><a href="../index.html">快报</a></h1>
+        </div>
+        <!--导航-->
+        <div class="nav">
+            <ul>
+                <li><a href="../index.html" >首页</a></li>
+                <li><a href="./course.html" class="active">赛程</a></li>
+                <li><a href="./index.html">赛事动态</a></li>
+            </ul>
+        </div>
+        <!--搜索-->
+        <div class="search">
+            <input type="text" placeholder="请输入关键词">
+            <a href="#"></a>
+        </div>
+        <!--用户-->
+        <div class="user">
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+        <!--侧边栏-->
+        <aside>
+            <div class="aside-box">
+                <div class="match">
+                    <div class="match-header">
+                        <div class="match-title">下一场</div>
+                    </div>
+                    <div class="match-body">
+                        <div class="match-team">
+                            <div class="match-team-pic">
+                                <img src="../uploads/match-team-pic/JDG.png" alt="">
+
+                            </div>
+                            <div class="match-team-name">
+                                JDG
+                            </div>
+                        </div>
+                        <div class="match-center">
+                           VS
+                        </div>
+                        <div class="match-team">
+                            <div class="match-team-pic">
+                                <img src="../uploads/match-team-pic/T1.png" alt="">
+
+                            </div>
+                            <div class="match-team-name">
+                                T1
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="match">
+                    <div class="match-header">
+                        <div class="match-title">等待中</div>
+                    </div>
+                    <div class="match-body">
+                        <div class="match-team">
+                            <div class="match-team-pic">
+                                <img src="../uploads/match-team-pic/WBG.png" alt="">
+
+                            </div>
+                            <div class="match-team-name">
+                                wbg
+                            </div>
+                        </div>
+                        <div class="match-center">
+                            VS
+                        </div>
+                        <div class="match-team">
+                            <div class="match-team-pic">
+                                <img src="../uploads/match-team-pic/T1.png" alt="">
+
+                            </div>
+                            <div class="match-team-name">
+                                T1
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+        <!--中央主体-->
+        <main>
+            <div class="blog-content-box">
+                <!--标题栏-->
+                <div class="blog-header-box">
+                    <div class="article-header">
+                        <div class="article-title-box">
+                            <h1 class="article-title">赛程</h1>
+                        </div>
+                        <div class="article-info-box">
+                            <div class="article-bar">
+                                <div class="post-time">更新时间：2023年10月29日 19:25</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--正文-->
+                <div class="article-body-box">
+                    <div class="article-body">
+                        <div class="match-course">
+                            <h2>瑞士轮</h2>
+                            <p>
+                                <img src="../uploads/course/S13-1.png" alt="">
+                            </p>
+                        </div>
+                        <div class="match-course">
+                            <h2>淘汰赛</h2>
+                            <p>
+                                <img src="../uploads/course/S13-2.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+<!--底部区域-->
+<div class="footer">
+    <div class="footer-box">
+        <div class="help">
+            <a href="#">help</a>
+            <ul>
+                <li>1.底部help和about两个链接都没跳转，不用点</li>
+                <li>2.头栏的搜索没做</li>
+                <li>3.非登录状态为游客模式，只能看，不能改，登录后进入后台</li>
+                <li>4.无法选择赛季，只能在S13，S1~S12没做，因为都是重复工作</li>
+                <li>5.使用浏览器左上角自带的返回功能，可能，在使用个别功能后的个别网页，会出现错误（使用hash但不彻底的原因）。推荐全程不要使用浏览器自带的返回与前进</li>
+                <li>6.登录页发布页都存在表单校验，可以尝试</li>
+                <li>7.发布页修改个人信息模块没做，技术重复了</li>
+                <li>8.请开启json-server服务，文件目录为 personal-blog/json-server/db.json，地址为http://localhost:3000（默认地址）</li>
+                <li>9.使用cookie保存登录数据，key为username，如果在登录前就已存在，请删除</li>
+            </ul>
+        </div>
+        <div class="about">
+            <a href="#">about</a>
+            <ul>
+                <li>编码型大只佬</li>
+                <li>alpha</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

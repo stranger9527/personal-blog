@@ -1,0 +1,101 @@
+
+/*注册区域*/
+.rg_layout {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 15px;
+    width: 700px;
+    height: 500px;
+    /*border: 3px solid #333333;*/
+    background-color: #ffffff;
+    border-radius: 2px;
+    z-index: 40;
+}
+
+.rg_left {
+    padding: 10px 6px;
+}
+
+.rg_left > p:first-child{
+
+    color: #F40A09;
+    font-size: 26px;
+}
+
+.rg_left > p:last-child{
+
+    color: #A6A6A6;
+    font-size: 20px;
+}
+
+.rg_center {
+    /*border: 1px solid red;*/
+    width: 400px;
+    font-size: 15px;
+}
+
+.rg_form {
+    padding: 14px;
+}
+
+.rg_form .info .tit {
+    margin: 0 0 15px;
+    line-height: 30px;
+    width: 80px;
+}
+
+.rg_form .info .gender {
+    padding-top: 4px;
+}
+
+.rg_form .accept {
+    padding: 20px 0;
+}
+
+.rg_form .accept a {
+    color: blue;
+}
+
+.rg_form .accept a:hover {
+    color: cornflowerblue;
+}
+
+.info {
+    display: flex;
+}
+
+#username,#password,#password-c,#team {
+    padding-left: 10px;
+    width: 250px;
+    height: 32px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+
+.rg_submit #btn_sub {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #F40A09;
+    border: 1px solid #F40A09;
+}
+
+.rg_submit a span {
+    color: white;
+}
+
+.rg_right {
+    padding: 14px 6px;
+    font-size: 14px;
+}
+
+
+.rg_right p a {
+    color: blue;
+}
+
+.rg_right p a:hover {
+    color: cornflowerblue;
+}

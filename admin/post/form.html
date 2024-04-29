@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单页</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/form.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <script src="../../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../../js/ejs.min.js" type="text/javascript"></script>
+    <script src="../../js/admin/post/check.js"></script>
+    <script src="../../js/admin/post/form.js"></script>
+</head>
+<body>
+
+<!--头部区域-->
+<div class="header">
+    <div class="wrapper">
+        <!--logo-->
+        <div class="logo">
+            <h1><a href="../index.html">快报</a></h1>
+        </div>
+        <!--导航-->
+        <div class="nav">
+            <ul>
+                <li><a href="../index.html" >首页</a></li>
+                <li><a href="./course.html" >赛程</a></li>
+                <li><a href="./index.html" >赛事动态</a></li>
+            </ul>
+        </div>
+        <!--搜索-->
+        <div class="search">
+            <input type="text" placeholder="请输入关键词">
+            <a href="#"></a>
+        </div>
+        <!--用户-->
+        <div class="user">
+
+        </div>
+    </div>
+</div>
+
+<div class="rg_layout">
+    <div class="rg_left">
+        <p>个人主页</p>
+        <p>HOME PAGE</p>
+    </div>
+    <div class="rg_center">
+        <div class="rg_form">
+            <form action="">
+                <div class="info">
+                    <div class="tit">修改信息：</div>
+
+                </div>
+                <div class="info">
+                    <div class="tit">密码：</div>
+                    <div class="inp">
+                        <input type="password" id="password" placeholder="请输入密码">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="tit">确认密码：</div>
+                    <div class="inp">
+                        <input type="password" id="password-c" placeholder="重复密码">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="tit">性别：</div>
+                    <div class="inp">
+                        <div class="gender">
+                            <input type="radio" name="gender" id="gender-m" checked>男
+                            <input type="radio" name="gender" id="gender-w">女
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="tit">主队：</div>
+                    <div class="inp">
+                        <select id="team">
+                            <option>JDG</option>
+                            <option>BLG</option>
+                            <option>LNG</option>
+                            <option>WBG</option>
+                            <option>G2</option>
+                        </select>
+                    </div>
+                </div>
+                <!--按钮-->
+                <div class="rg_submit">
+                    <input type="button" name="" id="btn_sub" value="修改">
+
+                </div>
+            </form>
+        </div>
+        <div class="rg_form">
+            <form action="">
+                <div class="info">
+                    <div class="tit">发布内容：</div>
+                </div>
+                <div class="info">
+                    <div class="tit">标题：</div>
+                    <div class="inp-article">
+                        <input type="text" id="article_tit" placeholder="标题">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="tit">简介：</div>
+                    <div class="inp-article">
+                        <input type="text" id="article_desc" placeholder="简介">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="tit">比赛时间：</div>
+                    <div class="inp-article">
+                        <input type="text" id="article_matchTime" placeholder="xxxx年xx月xx日 xx:xx">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="tit">内容：</div>
+                    <div class="inp-article">
+                        <textarea placeholder="请输入内容" id="article_body"></textarea>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="tit">图片：</div>
+                    <div class="inp-article">
+                        <input type="file" id="article_pic" placeholder="图片">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="tit">比赛队伍：</div>
+                    <div class="inp-teams">
+                        <select id="team_1">
+                            <option>JDG</option>
+                            <option>BLG</option>
+                            <option>T1</option>
+                            <option>WBG</option>
+                        </select>
+                        <select id="score_1">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <span>:</span>
+                        <select id="score_2">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <select id="team_2">
+                            <option>JDG</option>
+                            <option>BLG</option>
+                            <option>T1</option>
+                            <option>WBG</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--按钮-->
+                <div class="rg_submit">
+                    <input type="button" name="" id="btn_rel" value="发布">
+                    <!--<button id="btn_rel">-->
+                    <!--    -->
+                    <!--    <span>发布</span>-->
+                    <!--    -->
+                    <!--</button>-->
+                </div>
+            </form>
+        </div>
+
+        <!--退出-->
+        <div class="rg_submit">
+            <div class="logout">
+                <input type="button" name="" id="btn_logout" value="退出">
+            </div>
+        </div>
+    </div>
+    <div class="rg_right">
+
+    </div>
+</div>
+
+<!--底部区域-->
+<div class="footer">
+    <div class="footer-box">
+        <div class="help">
+            <a href="#">help</a>
+            <ul>
+                <li>1.底部help和about两个链接都没跳转，不用点</li>
+                <li>2.头栏的搜索没做</li>
+                <li>3.非登录状态为游客模式，只能看，不能改，登录后进入后台</li>
+                <li>4.无法选择赛季，只能在S13，S1~S12没做，因为都是重复工作</li>
+                <li>5.使用浏览器左上角自带的返回功能，可能，在使用个别功能后的个别网页，会出现错误（使用hash但不彻底的原因）。推荐全程不要使用浏览器自带的返回与前进</li>
+                <li>6.登录页发布页都存在表单校验，可以尝试</li>
+                <li>7.发布页修改个人信息模块没做，技术重复了</li>
+                <li>8.请开启json-server服务，文件目录为 personal-blog/json-server/db.json，地址为http://localhost:3000（默认地址）</li>
+                <li>9.使用cookie保存登录数据，key为username，如果在登录前就已存在，请删除</li>
+            </ul>
+        </div>
+        <div class="about">
+            <a href="#">about</a>
+            <ul>
+                <li>编码型大只佬</li>
+                <li>alpha</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

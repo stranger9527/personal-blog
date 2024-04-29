@@ -1,0 +1,66 @@
+
+<!--侧边栏-->
+    <aside>
+        <div class="aside-box">
+            <div class="match">
+                <div class="match-header">
+                    <div class="match-title"> <%= matchTitle %> </div>
+                </div>
+                <div class="match-body">
+                    <div class="match-team">
+                        <div class="match-team-pic">
+                            <img src="../../uploads/match-team-pic/<%= team1 %>.png" alt="">
+
+                        </div>
+                        <div class="match-team-name">
+                             <%= team1 %>
+                        </div>
+                    </div>
+                    <div class="match-center">
+                        <div> <%= score1 %> </div>
+                        <div>:</div>
+                        <div> <%= score2 %> </div>
+                    </div>
+                    <div class="match-team">
+                        <div class="match-team-pic">
+                            <img src="../../uploads/match-team-pic/<%= team2 %>.png" alt="">
+
+                        </div>
+                        <div class="match-team-name">
+                             <%= team2 %>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+    <!--中央主体-->
+    <main>
+        <div class="blog-content-box">
+            <!--标题栏-->
+            <div class="blog-header-box">
+                <div class="article-header">
+                    <div class="article-title-box">
+                        <h1 class="article-title"> <%= title %> </h1>
+                    </div>
+                    <div class="article-info-box">
+                        <div class="article-bar">
+                            <div class="post-time"> 发布时间 <%= matchTime %> </div>
+                            <div class="match-time"> 比赛时间 <%= postTime %> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--正文-->
+            <div class="article-body-box">
+                <div class="article-body">
+                    <p> <%= body %> </p>
+                    <p>
+                        <img src="../../uploads/breakdown/231119WBG-T1-0-3.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>

@@ -1,19 +1,18 @@
 /*版心*/
 .wrapper {
-    padding-top: 24px;
+    padding-top: 6px;
     margin: 0 auto;
     width: 1400px;
     font-size: 30px;
 }
 
-body {
-    background-color: #f3f5f7;
-}
-
 /*头部区域*/
 .header {
-    height: 92px;
+    height: 60px;
     background-color: #fff;
+    position: sticky;
+    z-index: 80;
+    top: 0;
 }
 
 .header .wrapper {
@@ -21,11 +20,16 @@ body {
 }
 
 /*logo*/
+.logo {
+    margin-top: 4px;
+}
+
 .logo a {
     display: block;
-    width: 198px;
-    height: 50px;
-    background-image: url("../images/logo.png");
+    width: 160px;
+    height: 40px;
+    background-image: url("../images/logo.png") ;
+    background-size: 160px;
     font-size: 0;
 }
 
@@ -57,11 +61,11 @@ body {
 /*搜索*/
 .search {
     display: flex;
-    margin-left: 50px;
-    padding-left: 14px;
-    padding-right: 14px;
+    margin: auto 50px;
+    padding-left: 12px;
+    padding-right: 12px;
     width: 420px;
-    height: 46px;
+    height: 40px;
     background-color: #f3f5f7;
     border-radius: 10px;
 }
@@ -96,6 +100,18 @@ body {
     width: 46px;
     height: 46px;
     vertical-align: middle;
+    border-radius: 23px;
+    background-color: #f3f5f7;
+}
+
+.user-login {
+    display: flex;
+    width: 46px;
+    height: 46px;
+    justify-content: center;
+    line-height: 46px;
+    border-radius: 23px;
+    background-color: #f3f5f7;
 }
 
 .user span {
@@ -109,20 +125,31 @@ body {
     margin: 50px auto;
     width: 1000px;
     height: 460px;
+    z-index: 40;
 }
 
 /*轮播图*/
 .unslider {
+    display: flex;
     height: 400px;
-    background-color: aqua;
+    background-color: #ffffff;
 
+}
+
+.swiper {
+    width: 710px;
+    margin: auto;
+}
+
+.unslider img {
+    height: 400px;
 }
 
 /*banner条幅*/
 .banner-tool {
     padding: 0 20px;
     height: 60px;
-    background-color: white;
+    background-color: #fff;
 }
 
 .banner-tool ul {
@@ -153,12 +180,14 @@ body {
 
 }
 
-/*热点赛事*/
-.event {
+/*热点赛事区域*/
+.home {
     margin: 60px auto;
     width: 1000px;
+    z-index: 40;
 }
 
+    /*通用标题*/
 .hd {
     display: flex;
     justify-content: space-between;
@@ -172,4 +201,125 @@ body {
     background: url("../images/more.png") no-repeat right center;
     font-size: 14px;
     color: #999;
+}
+
+.community {
+    margin-top: 16px;
+    background-color: #fff;
+}
+
+.community .event-item-active {
+    padding: 20px 20px;
+    display: flex;
+    border-bottom: 1px solid #f0f0f2;
+}
+
+.community .event-item-active:hover {
+    background-color: #fafafa;
+}
+
+.community .event-item-active .left {
+    margin-right: 16px;
+    align-items: flex-start;
+    border-radius: 2px;
+    width: 180px;
+    height: 100px;
+    display: inline-block;
+}
+
+.left a {
+    position: relative;
+    border-radius: 2px;
+    width: 180px;
+    height: 100px;
+    display: inline-block;
+    background-size: cover;
+    border: 1px solid #f5f6f7;
+    overflow: hidden;
+    background: #fff;
+}
+
+.left a img {
+    width: 100%;
+    top: -50%;
+    height: auto;
+    position: absolute;
+}
+
+.community .event-item-active .event-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.community p.h-tag {
+    width: 764px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222226;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 25px;
+}
+
+.community p.desc {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555666;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.operation {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    width: 64px;
+    /*background-color: royalblue;*/
+}
+
+.operation a {
+    display: inline-block;
+    line-height: 50px;
+}
+
+.update {
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.update a {
+    color: cornflowerblue;
+}
+
+.delete {
+    height: 50px;
+    text-align: center;
+}
+
+.delete a {
+    color: orangered;
+}
+
+.footer {
+    /*height: 100px;*/
+    background-color: white;
+}
+
+.footer-box {
+    width: 800px;
+    margin: auto;
+}
+
+.help {
+    padding: 10px 0 0;
+}
+
+.about {
+    padding: 10px 0 0;
 }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>赛事详情</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/new_detail.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <script src="../../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../../js/ejs.min.js" type="text/javascript"></script>
+    <!--<script src="../../js/post/show.js" type="text/javascript"></script>-->
+    <script src="../../js/admin/post/check.js"></script>
+    <script src="../../js/admin/post/list.js"></script>
+
+</head>
+<body>
+<!--头部区域-->
+<div class="header">
+    <div class="wrapper">
+        <!--logo-->
+        <div class="logo">
+            <h1><a href="../index.html">快报</a></h1>
+        </div>
+        <!--导航-->
+        <div class="nav">
+            <ul>
+                <li><a href="../index.html" >首页</a></li>
+                <li><a href="./course.html" >赛程</a></li>
+                <li><a href="./index.html">赛事动态</a></li>
+            </ul>
+        </div>
+        <!--搜索-->
+        <div class="search">
+            <input type="text" placeholder="请输入关键词">
+            <a href="#"></a>
+        </div>
+        <!--用户-->
+        <div class="user">
+
+        </div>
+    </div>
+</div>
+
+<!--中间区域-->
+<div class="container"></div>
+
+<div class="footer">
+    <div class="footer-box">
+        <div class="help">
+            <a href="#">help</a>
+            <ul>
+                <li>1.底部help和about两个链接都没跳转，不用点</li>
+                <li>2.头栏的搜索没做</li>
+                <li>3.非登录状态为游客模式，只能看，不能改，登录后进入后台</li>
+                <li>4.无法选择赛季，只能在S13，S1~S12没做，因为都是重复工作</li>
+                <li>5.使用浏览器左上角自带的返回功能，可能，在使用个别功能后的个别网页，会出现错误（使用hash但不彻底的原因）。推荐全程不要使用浏览器自带的返回与前进</li>
+                <li>6.登录页发布页都存在表单校验，可以尝试</li>
+                <li>7.发布页修改个人信息模块没做，技术重复了</li>
+                <li>8.请开启json-server服务，文件目录为 personal-blog/json-server/db.json，地址为http://localhost:3000（默认地址）</li>
+                <li>9.使用cookie保存登录数据，key为username，如果在登录前就已存在，请删除</li>
+            </ul>
+        </div>
+        <div class="about">
+            <a href="#">about</a>
+            <ul>
+                <li>编码型大只佬</li>
+                <li>alpha</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

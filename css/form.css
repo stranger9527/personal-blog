@@ -1,0 +1,141 @@
+
+.rg_layout {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 15px;
+    width: 1000px;
+    height: 1000px;
+    /*border: 3px solid #333333;*/
+    background-color: #ffffff;
+    border-radius: 2px;
+    z-index: 40;
+}
+
+.rg_left {
+    padding: 10px 6px;
+}
+
+.rg_left > p:first-child{
+
+    color: #F40A09;
+    font-size: 26px;
+}
+
+.rg_left > p:last-child{
+
+    color: #A6A6A6;
+    font-size: 20px;
+}
+
+.rg_center {
+    /*border: 1px solid red;*/
+    width: 700px;
+    font-size: 15px;
+}
+
+.rg_form {
+    padding: 14px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.rg_form .info .tit {
+    margin: 8px 0;
+    line-height: 30px;
+    width: 80px;
+}
+
+.rg_form .info .inp, .inp-article {
+    margin: 8px 0;
+}
+
+.rg_form .info .gender {
+    padding-top: 4px;
+}
+
+.rg_form .accept {
+    padding: 20px 0;
+}
+
+.rg_form .accept a {
+    color: blue;
+}
+
+.rg_form .accept a:hover {
+    color: cornflowerblue;
+}
+
+.info {
+    display: flex;
+}
+
+#username,#password,#password-c,#team {
+    padding-left: 10px;
+    width: 250px;
+    height: 32px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+
+#team_1, #team_2 {
+    padding-left: 10px;
+    width: 76px;
+    height: 32px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+
+#score_1, #score_2 {
+    padding-left: 4px;
+    width: 40px;
+    height: 32px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+
+.rg_submit #btn_sub, #btn_rel, #btn_logout {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #F40A09;
+    border: 1px solid #F40A09;
+    color: #fff;
+}
+
+.rg_submit #btn_sub, #btn_rel, #btn_logout:hover {
+    cursor: pointer;
+}
+
+#article_tit, #article_desc, #article_matchTime {
+    padding-left: 10px;
+    width: 500px;
+    height: 32px;
+    outline-width: 1px;
+    outline-color: dodgerblue;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+
+.inp-article textarea {
+    width: 500px;
+    height: 120px;
+    padding: 5px 10px;
+    outline-width: 1px;
+    outline-color: dodgerblue;
+    border: 1px solid #000;
+    reSize: none;
+    /*-moz-border-radius: 5px;*/
+    /*-webkit-border-radius: 5px;*/
+    border-radius: 4px;
+}
+
+.inp-teams span {
+    width: 30px;
+}
+
+.logout {
+    padding: 14px;
+    border-bottom: 1px solid #e0e0e0;
+}
+

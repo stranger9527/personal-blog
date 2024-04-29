@@ -1,0 +1,22 @@
+
+    <div class="event-item-active">
+        <!--标题图片-->
+        <div class="left">
+            <a href="#show/<%= id %>">
+                <img src="../../uploads/left-pic/231119WBG-T1-0-3.png" alt="">
+            </a>
+        </div>
+        <!--标题简介区-->
+        <div class="event-item">
+            <a href="#show/<%= id %>" class="blog">
+                <p class="h-tag">
+                    <span> <%= title %> </span>
+                </p>
+                <p class="desc">
+                    <span> <%= description %> </span>
+                </p>
+            </a>
+        </div>
+    </div>
+
+
